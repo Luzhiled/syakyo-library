@@ -59,7 +59,7 @@ namespace luz::sssp {
         }
       }
 
-      for (usize v: rep(0, n)) {
+      for (usize v = 0; v < n; v++) {
         if (ds_update_cnt[v] >= n) {
           ds[v]      = negative_inf;
           parents[v] = undefined;
