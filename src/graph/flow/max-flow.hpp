@@ -1,0 +1,115 @@
+#pragma once
+
+#include "src/cpp-template/header/size-alias.hpp"
+
+#include <algorithm>
+#include <cassert>
+#include <limits>
+#include <queue>
+#include <vector>
+
+namespace luz {
+
+  template < typename cap_type >
+  class MaxFlowGraph {
+    static constexpr cap_type INF =
+        std::numeric_limits< cap_type >::max();
+
+    struct Edge {
+      usize to;
+      cap_type cap;
+      usize rev;
+      Edge() = default;
+      Edge(usize to, cap_type cap, usize rev)
+          : to(to),
+            cap(cap),
+            rev(rev) {}
+    };
+
+    usize n;
+    std::vector< i32 > min_cost;
+    std::vector< usize > iter;
+    std::vector< std::vector< Edge > > g;
+
+    bool build_augment_path(usize s, usize t) {
+      min_cost.assign(n, -1);
+      std::queue< usize > que;
+
+      min_cost[s] = 0;
+      que.push(s);
+
+      while (not que.empty() and min_cost[t] == -1) {
+        usize v = que.front();
+        que.pop();
+
+        for (const auto &e: g[v]) {
+          if (e.cap > 0 and min_cost[e.to] == -1) {
+            min_cost[e.to] = min_cost[v] + 1;
+            que.push(e.to);
+          }
+        }
+      }
+
+      return min_cost[t] != -1;
+    }
+
+    cap_type find_augment_path(usize v, usize t, cap_type flow_limit) {
+      if (v == t) return flow_limit;
+
+      for (usize &i = iter[v]; i < g[v].size(); i++) {
+        Edge &e = g[v][i];
+
+        if (e.cap > 0 and min_cost[v] + 1 == min_cost[e.to]) {
+          cap_type d = find_augment_path(e.to, t, std::min(flow_limit, e.cap));
+
+          if (d > 0) {
+            e.cap -= d;
+            g[e.to][e.rev].cap += d;
+            return d;
+          }
+        }
+      }
+
+      return 0;
+    }
+
+   public:
+    MaxFlowGraph() = default;
+
+    explicit MaxFlowGraph(usize n): n(n), g(n) {}
+
+    void add_directed_edge(usize from, usize to, cap_type cap) {
+      assert(from < n and to < n and from != to);
+
+      g[from].emplace_back(to, cap, g[to].size());
+      g[to].emplace_back(from, 0, g[from].size() - 1);
+    }
+
+    inline cap_type inf() const {
+      return INF;
+    }
+
+    // 1. O(n^2 m) in general
+    // 2. other case: see docs "dinic-time-complexity.pdf"
+    cap_type max_flow(usize s, usize t) {
+      return max_flow(s, t, inf());
+    }
+
+    cap_type max_flow(usize s, usize t, cap_type flow_limit) {
+      assert(s < n and t < n and s != t);
+      cap_type flow = 0, add = 0;
+
+      while (build_augment_path(s, t) and flow < flow_limit) {
+        iter.assign(n, 0);
+
+        do {
+          add = find_augment_path(s, t, flow_limit - add);
+          flow += add;
+        } while (add > 0);
+      }
+
+      return flow;
+    }
+  };
+
+} // namespace luz
