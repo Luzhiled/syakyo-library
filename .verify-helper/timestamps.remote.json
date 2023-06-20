@@ -3,5 +3,7 @@
 "test/aoj/dsl_2_b/fenwick-tree.test.cpp": "2023-06-20 08:03:59 +0900",
 "test/aoj/grl_1_b/dynamic-graph.test.cpp": "2023-06-20 08:43:53 +0900",
 "test/aoj/grl_6_a.test.cpp": "2023-06-20 08:30:50 +0900",
+"test/atcoder/abc291_e.test.cpp": "2023-06-20 08:43:53 +0900",
+"test/atcoder/arc117_c.test.cpp": "2023-06-20 08:49:25 +0900",
 "test/library-checker/scc.test.cpp": "2023-06-20 08:43:53 +0900"
 }
