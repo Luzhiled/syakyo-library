@@ -26,12 +26,12 @@ namespace luz {
     }
 
     bool same(usize u, usize v) {
-      return impl_leader(u) == impl_leader(v);
+      return leader(u) == leader(v);
     }
 
     usize merge(usize u, usize v) {
-      isize x = impl_leader(u);
-      isize y = impl_leader(v);
+      isize x = leader(u);
+      isize y = leader(v);
       if (x == y) return x;
 
       if (-vals[x] < -vals[y]) std::swap(x, y);

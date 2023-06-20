@@ -40,6 +40,10 @@ namespace luz {
       return g[v];
     }
 
+    const Edges operator[](const usize &v) const {
+      return g[v];
+    }
+
   };
 
 } // namespace luz

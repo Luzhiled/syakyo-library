@@ -1,6 +1,6 @@
 #pragma once
 
-#include <cstding>
+#include <cstdint>
 
 namespace luz {
 

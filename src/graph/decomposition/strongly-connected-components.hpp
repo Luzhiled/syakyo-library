@@ -27,8 +27,10 @@ namespace luz {
       for (auto &e: g[v]) {
         if (ord[e.to] == n) {
           dfs(e.to);
+          low[v] = std::min(low[v], low[e.to]);
+        } else {
+          low[v] = std::min(low[v], ord[e.to]);
         }
-        low[v] = std::min(low[v], low[e.to]);
       }
 
       if (low[v] != ord[v]) return;

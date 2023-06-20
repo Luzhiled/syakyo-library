@@ -12,7 +12,7 @@ namespace luz {
     std::vector< T > tree;
 
     T sum(usize k) const {
-      T result();
+      T result{};
       while (k > 0) {
         result += tree[k];
         k -= k & -k;
