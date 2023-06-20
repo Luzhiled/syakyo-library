@@ -3,10 +3,10 @@ data:
   libraryCategories:
   - name: src/cpp-template/header
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/cpp-template/header/int-alias.hpp
       title: src/cpp-template/header/int-alias.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/cpp-template/header/size-alias.hpp
       title: src/cpp-template/header/size-alias.hpp
   - name: src/data-structure
@@ -19,12 +19,12 @@ data:
       title: src/data-structure/fenwick-tree.hpp
   - name: src/graph/class
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/graph/class/dynamic-graph.hpp
       title: src/graph/class/dynamic-graph.hpp
   - name: src/graph/class/edge
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/graph/class/edge/edge.hpp
       title: src/graph/class/edge/edge.hpp
   - name: src/graph/decomposition
@@ -44,18 +44,18 @@ data:
       title: src/graph/single-source-shortest-path/in-weighted-graph.hpp
   - name: src/graph/topological-ordering
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: src/graph/topological-ordering/lexical-order-topological-sort.hpp
       title: src/graph/topological-ordering/lexical-order-topological-sort.hpp
   - name: src/math/modular-arithmetic
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/modular-combinatorics.hpp
       title: src/math/modular-arithmetic/modular-combinatorics.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/small-mod-combination.hpp
       title: src/math/modular-arithmetic/small-mod-combination.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/static-modint.hpp
       title: src/math/modular-arithmetic/static-modint.hpp
   verificationCategories:
@@ -79,10 +79,10 @@ data:
       title: test/aoj/grl_1_b/dynamic-graph.test.cpp
   - name: test/atcoder
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/atcoder/abc291_e.test.cpp
       title: test/atcoder/abc291_e.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/atcoder/arc117_c.test.cpp
       title: test/atcoder/arc117_c.test.cpp
   - name: test/library-checker

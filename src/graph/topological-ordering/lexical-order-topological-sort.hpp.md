@@ -3,12 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/atcoder/abc291_e.test.cpp
     title: test/atcoder/abc291_e.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/graph/topological-ordering/lexical-order-topological-sort.hpp\"\
@@ -45,7 +45,7 @@ data:
   path: src/graph/topological-ordering/lexical-order-topological-sort.hpp
   requiredBy: []
   timestamp: '2023-06-20 07:40:44+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/atcoder/abc291_e.test.cpp
 documentation_of: src/graph/topological-ordering/lexical-order-topological-sort.hpp

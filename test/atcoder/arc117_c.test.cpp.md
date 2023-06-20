@@ -1,26 +1,26 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/cpp-template/header/int-alias.hpp
     title: src/cpp-template/header/int-alias.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/cpp-template/header/size-alias.hpp
     title: src/cpp-template/header/size-alias.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/modular-combinatorics.hpp
     title: src/math/modular-arithmetic/modular-combinatorics.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/small-mod-combination.hpp
     title: src/math/modular-arithmetic/small-mod-combination.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/static-modint.hpp
     title: src/math/modular-arithmetic/static-modint.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: https://atcoder.jp/contests/arc117/tasks/arc117_c
     links:
@@ -139,7 +139,7 @@ data:
   path: test/atcoder/arc117_c.test.cpp
   requiredBy: []
   timestamp: '2023-06-20 08:49:25+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/atcoder/arc117_c.test.cpp
 layout: document

@@ -5,10 +5,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/data-structure/disjoint-set-union.hpp
     title: src/data-structure/disjoint-set-union.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/graph/class/dynamic-graph.hpp
     title: src/graph/class/dynamic-graph.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/graph/class/edge/edge.hpp
     title: src/graph/class/edge/edge.hpp
   - icon: ':heavy_check_mark:'
@@ -20,10 +20,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/graph/single-source-shortest-path/in-weighted-graph.hpp
     title: src/graph/single-source-shortest-path/in-weighted-graph.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/modular-combinatorics.hpp
     title: src/math/modular-arithmetic/modular-combinatorics.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/small-mod-combination.hpp
     title: src/math/modular-arithmetic/small-mod-combination.hpp
   _extendedVerifiedWith:
@@ -39,18 +39,18 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/aoj/grl_6_a.test.cpp
     title: test/aoj/grl_6_a.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/atcoder/abc291_e.test.cpp
     title: test/atcoder/abc291_e.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/atcoder/arc117_c.test.cpp
     title: test/atcoder/arc117_c.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/cpp-template/header/size-alias.hpp\"\n\n#include <cstddef>\n\
@@ -71,7 +71,7 @@ data:
   - src/graph/single-source-shortest-path/in-weighted-graph.hpp
   - src/graph/flow/max-flow.hpp
   timestamp: '2023-06-20 06:34:42+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library-checker/scc.test.cpp
   - test/atcoder/arc117_c.test.cpp
