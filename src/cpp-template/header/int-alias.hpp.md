@@ -22,6 +22,12 @@ data:
     path: test/atcoder/arc117_c.test.cpp
     title: test/atcoder/arc117_c.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/library-checker/bitwise_and_convolution.test.cpp
+    title: test/library-checker/bitwise_and_convolution.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/library-checker/bitwise_xor_convolution.test.cpp
+    title: test/library-checker/bitwise_xor_convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
   _isVerificationFailed: false
@@ -44,10 +50,12 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library-checker/scc.test.cpp
+  - test/library-checker/bitwise_and_convolution.test.cpp
+  - test/library-checker/bitwise_xor_convolution.test.cpp
   - test/atcoder/arc117_c.test.cpp
+  - test/aoj/grl_1_b/dynamic-graph.test.cpp
   - test/aoj/dsl_2_b/fenwick-tree.test.cpp
   - test/aoj/grl_6_a.test.cpp
-  - test/aoj/grl_1_b/dynamic-graph.test.cpp
   - test/aoj/dsl_1_a.test.cpp
 documentation_of: src/cpp-template/header/int-alias.hpp
 layout: document

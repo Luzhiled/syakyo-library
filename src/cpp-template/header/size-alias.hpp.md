@@ -21,6 +21,15 @@ data:
     path: src/graph/single-source-shortest-path/in-weighted-graph.hpp
     title: src/graph/single-source-shortest-path/in-weighted-graph.hpp
   - icon: ':heavy_check_mark:'
+    path: src/math/convolution/bitwise-and-convolution.hpp
+    title: src/math/convolution/bitwise-and-convolution.hpp
+  - icon: ':heavy_check_mark:'
+    path: src/math/convolution/bitwise-xor-convolution.hpp
+    title: src/math/convolution/bitwise-xor-convolution.hpp
+  - icon: ':heavy_check_mark:'
+    path: src/math/convolution/fast-walsh-hadamard-transform.hpp
+    title: src/math/convolution/fast-walsh-hadamard-transform.hpp
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/modular-combinatorics.hpp
     title: src/math/modular-arithmetic/modular-combinatorics.hpp
   - icon: ':heavy_check_mark:'
@@ -46,6 +55,12 @@ data:
     path: test/atcoder/arc117_c.test.cpp
     title: test/atcoder/arc117_c.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/library-checker/bitwise_and_convolution.test.cpp
+    title: test/library-checker/bitwise_and_convolution.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/library-checker/bitwise_xor_convolution.test.cpp
+    title: test/library-checker/bitwise_xor_convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
   _isVerificationFailed: false
@@ -63,22 +78,27 @@ data:
   path: src/cpp-template/header/size-alias.hpp
   requiredBy:
   - src/data-structure/disjoint-set-union.hpp
+  - src/math/convolution/fast-walsh-hadamard-transform.hpp
+  - src/math/convolution/bitwise-xor-convolution.hpp
+  - src/math/convolution/bitwise-and-convolution.hpp
   - src/math/modular-arithmetic/small-mod-combination.hpp
   - src/math/modular-arithmetic/modular-combinatorics.hpp
-  - src/graph/class/edge/edge.hpp
-  - src/graph/class/dynamic-graph.hpp
-  - src/graph/decomposition/strongly-connected-components.hpp
-  - src/graph/single-source-shortest-path/in-weighted-graph.hpp
   - src/graph/flow/max-flow.hpp
+  - src/graph/class/dynamic-graph.hpp
+  - src/graph/class/edge/edge.hpp
+  - src/graph/single-source-shortest-path/in-weighted-graph.hpp
+  - src/graph/decomposition/strongly-connected-components.hpp
   timestamp: '2023-06-20 06:34:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library-checker/scc.test.cpp
+  - test/library-checker/bitwise_and_convolution.test.cpp
+  - test/library-checker/bitwise_xor_convolution.test.cpp
   - test/atcoder/arc117_c.test.cpp
   - test/atcoder/abc291_e.test.cpp
+  - test/aoj/grl_1_b/dynamic-graph.test.cpp
   - test/aoj/dsl_2_b/fenwick-tree.test.cpp
   - test/aoj/grl_6_a.test.cpp
-  - test/aoj/grl_1_b/dynamic-graph.test.cpp
   - test/aoj/dsl_1_a.test.cpp
 documentation_of: src/cpp-template/header/size-alias.hpp
 layout: document
