@@ -58,8 +58,14 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/math/convolution/fast-walsh-hadamard-transform.hpp
       title: src/math/convolution/fast-walsh-hadamard-transform.hpp
+    - icon: ':heavy_check_mark:'
+      path: src/math/convolution/mod-convolution.hpp
+      title: src/math/convolution/mod-convolution.hpp
   - name: src/math/modular-arithmetic
     pages:
+    - icon: ':heavy_check_mark:'
+      path: src/math/modular-arithmetic/mod-pow.hpp
+      title: src/math/modular-arithmetic/mod-pow.hpp
     - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/modular-combinatorics.hpp
       title: src/math/modular-arithmetic/modular-combinatorics.hpp
@@ -104,6 +110,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/library-checker/bitwise_xor_convolution.test.cpp
       title: test/library-checker/bitwise_xor_convolution.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/library-checker/modint_convolution.test.cpp
+      title: test/library-checker/modint_convolution.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/library-checker/scc.test.cpp
       title: test/library-checker/scc.test.cpp

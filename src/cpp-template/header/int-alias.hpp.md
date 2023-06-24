@@ -3,6 +3,12 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':heavy_check_mark:'
+    path: src/math/convolution/mod-convolution.hpp
+    title: src/math/convolution/mod-convolution.hpp
+  - icon: ':heavy_check_mark:'
+    path: src/math/modular-arithmetic/mod-pow.hpp
+    title: src/math/modular-arithmetic/mod-pow.hpp
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/static-modint.hpp
     title: src/math/modular-arithmetic/static-modint.hpp
   _extendedVerifiedWith:
@@ -28,6 +34,9 @@ data:
     path: test/library-checker/bitwise_xor_convolution.test.cpp
     title: test/library-checker/bitwise_xor_convolution.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/library-checker/modint_convolution.test.cpp
+    title: test/library-checker/modint_convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
   _isVerificationFailed: false
@@ -45,10 +54,13 @@ data:
   isVerificationFile: false
   path: src/cpp-template/header/int-alias.hpp
   requiredBy:
+  - src/math/convolution/mod-convolution.hpp
   - src/math/modular-arithmetic/static-modint.hpp
+  - src/math/modular-arithmetic/mod-pow.hpp
   timestamp: '2023-06-20 08:00:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/scc.test.cpp
   - test/library-checker/bitwise_and_convolution.test.cpp
   - test/library-checker/bitwise_xor_convolution.test.cpp

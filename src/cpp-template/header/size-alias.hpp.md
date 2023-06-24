@@ -30,6 +30,9 @@ data:
     path: src/math/convolution/fast-walsh-hadamard-transform.hpp
     title: src/math/convolution/fast-walsh-hadamard-transform.hpp
   - icon: ':heavy_check_mark:'
+    path: src/math/convolution/mod-convolution.hpp
+    title: src/math/convolution/mod-convolution.hpp
+  - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/modular-combinatorics.hpp
     title: src/math/modular-arithmetic/modular-combinatorics.hpp
   - icon: ':heavy_check_mark:'
@@ -61,6 +64,9 @@ data:
     path: test/library-checker/bitwise_xor_convolution.test.cpp
     title: test/library-checker/bitwise_xor_convolution.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/library-checker/modint_convolution.test.cpp
+    title: test/library-checker/modint_convolution.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
   _isVerificationFailed: false
@@ -81,6 +87,7 @@ data:
   - src/math/convolution/fast-walsh-hadamard-transform.hpp
   - src/math/convolution/bitwise-xor-convolution.hpp
   - src/math/convolution/bitwise-and-convolution.hpp
+  - src/math/convolution/mod-convolution.hpp
   - src/math/modular-arithmetic/small-mod-combination.hpp
   - src/math/modular-arithmetic/modular-combinatorics.hpp
   - src/graph/flow/max-flow.hpp
@@ -91,6 +98,7 @@ data:
   timestamp: '2023-06-20 06:34:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/scc.test.cpp
   - test/library-checker/bitwise_and_convolution.test.cpp
   - test/library-checker/bitwise_xor_convolution.test.cpp
