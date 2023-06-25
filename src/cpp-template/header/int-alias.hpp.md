@@ -25,6 +25,9 @@ data:
     path: test/aoj/grl_6_a.test.cpp
     title: test/aoj/grl_6_a.test.cpp
   - icon: ':heavy_check_mark:'
+    path: test/aoj/grl_6_b.test.cpp
+    title: test/aoj/grl_6_b.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/atcoder/arc117_c.test.cpp
     title: test/atcoder/arc117_c.test.cpp
   - icon: ':heavy_check_mark:'
@@ -66,6 +69,7 @@ data:
   - test/library-checker/bitwise_xor_convolution.test.cpp
   - test/atcoder/arc117_c.test.cpp
   - test/aoj/grl_1_b/dynamic-graph.test.cpp
+  - test/aoj/grl_6_b.test.cpp
   - test/aoj/dsl_2_b/fenwick-tree.test.cpp
   - test/aoj/grl_6_a.test.cpp
   - test/aoj/dsl_1_a.test.cpp

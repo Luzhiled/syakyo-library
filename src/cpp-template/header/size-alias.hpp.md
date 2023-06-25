@@ -18,6 +18,9 @@ data:
     path: src/graph/flow/max-flow.hpp
     title: src/graph/flow/max-flow.hpp
   - icon: ':heavy_check_mark:'
+    path: src/graph/flow/min-cost-f-flow.hpp
+    title: src/graph/flow/min-cost-f-flow.hpp
+  - icon: ':heavy_check_mark:'
     path: src/graph/single-source-shortest-path/in-weighted-graph.hpp
     title: src/graph/single-source-shortest-path/in-weighted-graph.hpp
   - icon: ':heavy_check_mark:'
@@ -51,6 +54,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/aoj/grl_6_a.test.cpp
     title: test/aoj/grl_6_a.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/aoj/grl_6_b.test.cpp
+    title: test/aoj/grl_6_b.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/atcoder/abc291_e.test.cpp
     title: test/atcoder/abc291_e.test.cpp
@@ -90,6 +96,7 @@ data:
   - src/math/convolution/mod-convolution.hpp
   - src/math/modular-arithmetic/small-mod-combination.hpp
   - src/math/modular-arithmetic/modular-combinatorics.hpp
+  - src/graph/flow/min-cost-f-flow.hpp
   - src/graph/flow/max-flow.hpp
   - src/graph/class/dynamic-graph.hpp
   - src/graph/class/edge/edge.hpp
@@ -105,6 +112,7 @@ data:
   - test/atcoder/arc117_c.test.cpp
   - test/atcoder/abc291_e.test.cpp
   - test/aoj/grl_1_b/dynamic-graph.test.cpp
+  - test/aoj/grl_6_b.test.cpp
   - test/aoj/dsl_2_b/fenwick-tree.test.cpp
   - test/aoj/grl_6_a.test.cpp
   - test/aoj/dsl_1_a.test.cpp

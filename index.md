@@ -37,6 +37,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/graph/flow/max-flow.hpp
       title: src/graph/flow/max-flow.hpp
+    - icon: ':heavy_check_mark:'
+      path: src/graph/flow/min-cost-f-flow.hpp
+      title: src/graph/flow/min-cost-f-flow.hpp
   - name: src/graph/single-source-shortest-path
     pages:
     - icon: ':heavy_check_mark:'
@@ -84,6 +87,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/aoj/grl_6_a.test.cpp
       title: test/aoj/grl_6_a.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/aoj/grl_6_b.test.cpp
+      title: test/aoj/grl_6_b.test.cpp
   - name: test/aoj/dsl_2_b
     pages:
     - icon: ':heavy_check_mark:'
