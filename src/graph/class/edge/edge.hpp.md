@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/cpp-template/header/size-alias.hpp
     title: src/cpp-template/header/size-alias.hpp
   _extendedRequiredBy: []
@@ -12,12 +12,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/atcoder/abc291_e.test.cpp
     title: test/atcoder/abc291_e.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/graph/class/edge/edge.hpp\"\n\n#line 2 \"src/cpp-template/header/size-alias.hpp\"\
@@ -38,7 +38,7 @@ data:
   path: src/graph/class/edge/edge.hpp
   requiredBy: []
   timestamp: '2023-06-20 08:29:17+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/library-checker/scc.test.cpp
   - test/atcoder/abc291_e.test.cpp

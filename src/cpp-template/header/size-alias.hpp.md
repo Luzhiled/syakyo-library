@@ -5,15 +5,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/data-structure/disjoint-set-union.hpp
     title: src/data-structure/disjoint-set-union.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/graph/class/dynamic-graph.hpp
     title: src/graph/class/dynamic-graph.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/graph/class/edge/edge.hpp
     title: src/graph/class/edge/edge.hpp
-  - icon: ':heavy_check_mark:'
-    path: src/graph/decomposition/strongly-connected-components.hpp
-    title: src/graph/decomposition/strongly-connected-components.hpp
   - icon: ':heavy_check_mark:'
     path: src/graph/flow/max-flow.hpp
     title: src/graph/flow/max-flow.hpp
@@ -72,12 +69,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/library-checker/modint_convolution.test.cpp
     title: test/library-checker/modint_convolution.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/cpp-template/header/size-alias.hpp\"\n\n#include <cstddef>\n\
@@ -101,9 +98,8 @@ data:
   - src/graph/class/dynamic-graph.hpp
   - src/graph/class/edge/edge.hpp
   - src/graph/single-source-shortest-path/in-weighted-graph.hpp
-  - src/graph/decomposition/strongly-connected-components.hpp
   timestamp: '2023-06-20 06:34:42+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/scc.test.cpp

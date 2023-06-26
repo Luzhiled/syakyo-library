@@ -39,12 +39,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/library-checker/modint_convolution.test.cpp
     title: test/library-checker/modint_convolution.test.cpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/cpp-template/header/int-alias.hpp\"\n\n#include <cstdint>\n\
@@ -61,7 +61,7 @@ data:
   - src/math/modular-arithmetic/static-modint.hpp
   - src/math/modular-arithmetic/mod-pow.hpp
   timestamp: '2023-06-20 08:00:22+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
   - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/scc.test.cpp

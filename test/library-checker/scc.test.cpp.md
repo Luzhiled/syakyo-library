@@ -1,26 +1,26 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/cpp-template/header/int-alias.hpp
     title: src/cpp-template/header/int-alias.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/cpp-template/header/size-alias.hpp
     title: src/cpp-template/header/size-alias.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/graph/class/dynamic-graph.hpp
     title: src/graph/class/dynamic-graph.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: src/graph/class/edge/edge.hpp
     title: src/graph/class/edge/edge.hpp
-  - icon: ':heavy_check_mark:'
+  - icon: ':x:'
     path: src/graph/decomposition/strongly-connected-components.hpp
     title: src/graph/decomposition/strongly-connected-components.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     PROBLEM: https://judge.yosupo.jp/problem/scc
     links:
@@ -49,32 +49,22 @@ data:
     \ u, cost, edge_count++);\n    }\n\n    Edges operator[](const usize &v) {\n \
     \     return g[v];\n    }\n\n    const Edges operator[](const usize &v) const\
     \ {\n      return g[v];\n    }\n\n  };\n\n} // namespace luz\n#line 2 \"src/graph/decomposition/strongly-connected-components.hpp\"\
-    \n\n#line 4 \"src/graph/decomposition/strongly-connected-components.hpp\"\n\n\
-    #line 6 \"src/graph/decomposition/strongly-connected-components.hpp\"\n\nnamespace\
-    \ luz {\n\n  template < class G >\n  class StronglyConnectedComponents {\n   \
-    \ using graph     = G;\n    using cost_type = typename graph::cost_type;\n\n \
-    \   using groups_type = std::vector< std::vector< usize > >;\n\n    graph g;\n\
-    \    usize n;\n\n    std::vector< usize > low, ord, visited, group_id;\n\n   \
-    \ usize ord_cnt, group_cnt;\n\n    void dfs(usize v) {\n      low[v] = ord[v]\
-    \ = ord_cnt++;\n      visited.emplace_back(v);\n\n      for (auto &e: g[v]) {\n\
-    \        if (ord[e.to] == n) {\n          dfs(e.to);\n          low[v] = std::min(low[v],\
-    \ low[e.to]);\n        } else {\n          low[v] = std::min(low[v], ord[e.to]);\n\
-    \        }\n      }\n\n      if (low[v] != ord[v]) return;\n\n      while (true)\
-    \ {\n        usize u = visited.back();\n        visited.pop_back();\n\n      \
-    \  ord[u]      = n + 1;\n        group_id[u] = group_cnt;\n\n        if (u ==\
-    \ v) break;\n      }\n\n      group_cnt++;\n    }\n\n   public:\n    explicit\
-    \ StronglyConnectedComponents(const graph& g_)\n        : g(g_), n(g.size()),\
-    \ low(n), ord(n, n), group_id(n), ord_cnt(0), group_cnt(0) {\n      visited.reserve(n);\n\
-    \n      for (usize v = 0; v < n; v++) {\n        if (ord[v] != n) continue;\n\
-    \        dfs(v);\n      }\n\n      for (auto &id: group_id) {\n        id = group_cnt\
-    \ - id - 1;\n      }\n    }\n\n    groups_type groups() const {\n      std::vector<\
-    \ usize > counts(group_cnt);\n      for (usize i = 0; i < n; i++) {\n        counts[group_id[i]]++;\n\
-    \      }\n\n      groups_type groups(group_cnt);\n      for (usize i = 0; i <\
-    \ group_cnt; i++) {\n        groups[i].reserve(counts[i]);\n      }\n\n      for\
-    \ (usize i = 0; i < n; i++) {\n        groups[group_id[i]].emplace_back(i);\n\
-    \      }\n\n      return groups;\n    }\n\n    std::vector< usize > group_ids()\
-    \ const {\n      return group_id;\n    }\n  };\n\n} // namespace luz\n#line 8\
-    \ \"test/library-checker/scc.test.cpp\"\n\n#include <iostream>\n#line 11 \"test/library-checker/scc.test.cpp\"\
+    \n\n#line 5 \"src/graph/decomposition/strongly-connected-components.hpp\"\n\n\
+    namespace luz {\n\n  struct SCCGraph {\n    using usize = std::size_t;\n    using\
+    \ graph = std::vector< std::vector< usize > >;\n\n    usize n;\n    graph g;\n\
+    \n    std::vector< usize > S, B, I;\n\n    void dfs(usize v, graph &scc) {\n \
+    \     B.emplace_back(I[v] = S.size());\n      S.emplace_back(v);\n\n      for\
+    \ (auto u: g[v]) {\n        if (not I[u]) {\n          dfs(u, scc);\n        \
+    \  continue;\n        }\n        while (I[u] < B.back()) B.pop_back();\n     \
+    \ }\n\n      if (I[v] != B.back()) return;\n\n      scc.emplace_back();\n    \
+    \  B.pop_back();\n      while (I[v] < S.size()) {\n        scc.back().emplace_back(S.back());\n\
+    \        I[S.back()] = n + scc.size();\n        S.pop_back();\n      }\n    }\n\
+    \n   public:\n    SCCGraph(usize n) : n(n), g(n) {}\n\n    void add_directed_edge(usize\
+    \ from, usize to) {\n      g[from].emplace_back(to);\n    }\n\n    graph get_scc_list()\
+    \ {\n      graph scc;\n      I.assign(n, 0);\n      S = B = {};\n      for (usize\
+    \ v = 0; v < n; v++) {\n        if (not I[v]) dfs(v, scc);\n      }\n      return\
+    \ {scc.rbegin(), scc.rend()};\n    }\n\n  };\n\n} // namespace luz\n#line 8 \"\
+    test/library-checker/scc.test.cpp\"\n\n#include <iostream>\n#line 11 \"test/library-checker/scc.test.cpp\"\
     \n\nnamespace luz {\n\n  void main_() {\n    using edge  = Edge< i32 >;\n    using\
     \ graph = DynamicGraph< edge >;\n\n    usize n, m;\n    std::cin >> n >> m;\n\
     \    graph g(n);\n\n    while (m--) {\n      usize u, v;\n      std::cin >> u\
@@ -106,8 +96,8 @@ data:
   isVerificationFile: true
   path: test/library-checker/scc.test.cpp
   requiredBy: []
-  timestamp: '2023-06-20 08:43:53+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2023-06-27 00:36:31+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/library-checker/scc.test.cpp
 layout: document
