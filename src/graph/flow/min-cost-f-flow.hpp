@@ -52,14 +52,12 @@ namespace luz {
 
       while (f > 0) {
         min_cost.assign(n, inf);
-
         que.emplace(0, s);
         min_cost[s] = 0;
 
         while(!que.empty()) {
           auto [cost, v] = que.top();
           que.pop();
-
           if (min_cost[v] < cost) continue;
 
           for (usize i = 0; i < g[v].size(); i++) {
@@ -86,11 +84,9 @@ namespace luz {
         }
 
         flow_t addflow = f;
-
         for (usize v = t; v != s; v = pvs[v]) {
           addflow = std::min(addflow, g[pvs[v]][pes[v]].cap);
         }
-
         f -= addflow;
         ret += addflow * potential[t];
 
