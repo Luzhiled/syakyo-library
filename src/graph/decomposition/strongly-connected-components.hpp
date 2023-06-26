@@ -11,7 +11,6 @@ namespace luz {
 
     usize n;
     graph g;
-
     std::vector< usize > S, B, I;
 
     void dfs(usize v, graph &scc) {
@@ -19,13 +18,12 @@ namespace luz {
       S.emplace_back(v);
 
       for (auto u: g[v]) {
-        if (not I[u]) {
+        if (I[u]) {
+          while (I[u] < B.back()) B.pop_back();
+        } else {
           dfs(u, scc);
-          continue;
         }
-        while (I[u] < B.back()) B.pop_back();
       }
-
       if (I[v] != B.back()) return;
 
       scc.emplace_back();
