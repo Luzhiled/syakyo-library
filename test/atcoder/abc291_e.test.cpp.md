@@ -1,13 +1,13 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/cpp-template/header/size-alias.hpp
     title: src/cpp-template/header/size-alias.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/graph/class/dynamic-graph.hpp
     title: src/graph/class/dynamic-graph.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/graph/class/edge/edge.hpp
     title: src/graph/class/edge/edge.hpp
   - icon: ':heavy_check_mark:'

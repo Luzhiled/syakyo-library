@@ -3,10 +3,10 @@ data:
   libraryCategories:
   - name: src/cpp-template/header
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/cpp-template/header/int-alias.hpp
       title: src/cpp-template/header/int-alias.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/cpp-template/header/size-alias.hpp
       title: src/cpp-template/header/size-alias.hpp
   - name: src/data-structure
@@ -19,17 +19,17 @@ data:
       title: src/data-structure/fenwick-tree.hpp
   - name: src/graph/class
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/graph/class/dynamic-graph.hpp
       title: src/graph/class/dynamic-graph.hpp
   - name: src/graph/class/edge
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: src/graph/class/edge/edge.hpp
       title: src/graph/class/edge/edge.hpp
   - name: src/graph/decomposition
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: src/graph/decomposition/strongly-connected-components.hpp
       title: src/graph/decomposition/strongly-connected-components.hpp
   - name: src/graph/flow
@@ -119,7 +119,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/library-checker/modint_convolution.test.cpp
       title: test/library-checker/modint_convolution.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/library-checker/scc.test.cpp
       title: test/library-checker/scc.test.cpp
 layout: toppage

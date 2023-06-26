@@ -5,10 +5,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/data-structure/disjoint-set-union.hpp
     title: src/data-structure/disjoint-set-union.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/graph/class/dynamic-graph.hpp
     title: src/graph/class/dynamic-graph.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: src/graph/class/edge/edge.hpp
     title: src/graph/class/edge/edge.hpp
   - icon: ':heavy_check_mark:'
@@ -69,12 +69,12 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/library-checker/modint_convolution.test.cpp
     title: test/library-checker/modint_convolution.test.cpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/library-checker/scc.test.cpp
     title: test/library-checker/scc.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"src/cpp-template/header/size-alias.hpp\"\n\n#include <cstddef>\n\
@@ -99,7 +99,7 @@ data:
   - src/graph/class/edge/edge.hpp
   - src/graph/single-source-shortest-path/in-weighted-graph.hpp
   timestamp: '2023-06-20 06:34:42+09:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/scc.test.cpp
