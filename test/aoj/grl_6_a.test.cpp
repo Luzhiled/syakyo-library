@@ -12,7 +12,7 @@ namespace luz {
     usize n, m;
     std::cin >> n >> m;
 
-    MaxFlowGraph< u32 > g(n);
+    MaxFlowGraph g(n);
     while (m--) {
       usize u, v;
       u32 c;
