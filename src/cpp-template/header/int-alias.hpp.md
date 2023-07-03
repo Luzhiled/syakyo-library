@@ -54,20 +54,20 @@ data:
   isVerificationFile: false
   path: src/cpp-template/header/int-alias.hpp
   requiredBy:
-  - src/math/convolution/mod-convolution.hpp
-  - src/math/modular-arithmetic/static-modint.hpp
   - src/math/modular-arithmetic/mod-pow.hpp
+  - src/math/modular-arithmetic/static-modint.hpp
+  - src/math/convolution/mod-convolution.hpp
   timestamp: '2023-06-20 08:00:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/atcoder/arc117_c.test.cpp
   - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/bitwise_and_convolution.test.cpp
   - test/library-checker/bitwise_xor_convolution.test.cpp
-  - test/atcoder/arc117_c.test.cpp
   - test/aoj/grl_1_b/dynamic-graph.test.cpp
+  - test/aoj/grl_6_a.test.cpp
   - test/aoj/grl_6_b.test.cpp
   - test/aoj/dsl_2_b/fenwick-tree.test.cpp
-  - test/aoj/grl_6_a.test.cpp
   - test/aoj/dsl_1_a.test.cpp
 documentation_of: src/cpp-template/header/int-alias.hpp
 layout: document
