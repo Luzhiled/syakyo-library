@@ -10,7 +10,7 @@ namespace luz {
   // to support even-length, insert a dummy character.
   //   [!] be careful with the post-processing.
   //       exec `vs[i] -= ((i ^ vs[i]) & 1) == 0;`
-  std::vector<int> manacher(string s){
+  std::vector<int> manacher(std::string s){
     int n = s.size();
     std::vector<int> vs(n);
     int i = 0, j = 0;
