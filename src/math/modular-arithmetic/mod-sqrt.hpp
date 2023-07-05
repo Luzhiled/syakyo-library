@@ -8,6 +8,7 @@ namespace luz {
   // a^{(p-1)/2} == 1 (mod p, p is prime)
   //   iff. a has sqrt on mod p.
   // [!] mod-sqrt is not always unique.
+  // O(log^2 p)
   i64 mod_sqrt(i64 a, i64 p) {
     if (a == 0) return 0;
     if (p == 2) return a;
