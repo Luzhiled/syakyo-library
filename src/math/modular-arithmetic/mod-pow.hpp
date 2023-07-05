@@ -5,6 +5,7 @@
 namespace luz {
 
   i64 mod_pow(i64 b, i64 e, i64 mod) {
+    if (mod == 1) return 0;
     i64 ans{1};
 
     while (e) {
