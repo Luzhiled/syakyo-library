@@ -52,8 +52,8 @@ data:
   timestamp: '2023-06-24 21:59:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/library-checker/bitwise_and_convolution.test.cpp
   - test/library-checker/bitwise_xor_convolution.test.cpp
+  - test/library-checker/bitwise_and_convolution.test.cpp
 documentation_of: src/math/convolution/fast-walsh-hadamard-transform.hpp
 layout: document
 redirect_from:

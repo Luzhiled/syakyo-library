@@ -66,9 +66,15 @@ data:
       title: src/math/convolution/mod-convolution.hpp
   - name: src/math/modular-arithmetic
     pages:
+    - icon: ':warning:'
+      path: src/math/modular-arithmetic/mod-log.hpp
+      title: src/math/modular-arithmetic/mod-log.hpp
     - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/mod-pow.hpp
       title: src/math/modular-arithmetic/mod-pow.hpp
+    - icon: ':warning:'
+      path: src/math/modular-arithmetic/mod-sqrt.hpp
+      title: src/math/modular-arithmetic/mod-sqrt.hpp
     - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/modular-combinatorics.hpp
       title: src/math/modular-arithmetic/modular-combinatorics.hpp
@@ -78,6 +84,31 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/math/modular-arithmetic/static-modint.hpp
       title: src/math/modular-arithmetic/static-modint.hpp
+  - name: src/math/number-theory
+    pages:
+    - icon: ':warning:'
+      path: src/math/number-theory/totient-table.hpp
+      title: src/math/number-theory/totient-table.hpp
+    - icon: ':warning:'
+      path: src/math/number-theory/totient.hpp
+      title: src/math/number-theory/totient.hpp
+  - name: src/string
+    pages:
+    - icon: ':warning:'
+      path: src/string/knuth-morris-pratt.hpp
+      title: src/string/knuth-morris-pratt.hpp
+    - icon: ':warning:'
+      path: src/string/manacher.hpp
+      title: src/string/manacher.hpp
+    - icon: ':warning:'
+      path: src/string/online-z-algorithm.hpp
+      title: src/string/online-z-algorithm.hpp
+    - icon: ':warning:'
+      path: src/string/rolling-hash.hpp
+      title: src/string/rolling-hash.hpp
+    - icon: ':warning:'
+      path: src/string/z-algorithm.hpp
+      title: src/string/z-algorithm.hpp
   verificationCategories:
   - name: test/aoj
     pages:

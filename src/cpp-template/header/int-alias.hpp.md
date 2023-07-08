@@ -5,6 +5,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/math/convolution/mod-convolution.hpp
     title: src/math/convolution/mod-convolution.hpp
+  - icon: ':warning:'
+    path: src/math/modular-arithmetic/mod-log.hpp
+    title: src/math/modular-arithmetic/mod-log.hpp
   - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/mod-pow.hpp
     title: src/math/modular-arithmetic/mod-pow.hpp
@@ -54,6 +57,7 @@ data:
   isVerificationFile: false
   path: src/cpp-template/header/int-alias.hpp
   requiredBy:
+  - src/math/modular-arithmetic/mod-log.hpp
   - src/math/modular-arithmetic/mod-pow.hpp
   - src/math/modular-arithmetic/static-modint.hpp
   - src/math/convolution/mod-convolution.hpp
@@ -61,14 +65,14 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/atcoder/arc117_c.test.cpp
+  - test/aoj/grl_6_a.test.cpp
+  - test/aoj/dsl_1_a.test.cpp
+  - test/aoj/grl_6_b.test.cpp
+  - test/aoj/grl_1_b/dynamic-graph.test.cpp
+  - test/aoj/dsl_2_b/fenwick-tree.test.cpp
+  - test/library-checker/bitwise_xor_convolution.test.cpp
   - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/bitwise_and_convolution.test.cpp
-  - test/library-checker/bitwise_xor_convolution.test.cpp
-  - test/aoj/grl_1_b/dynamic-graph.test.cpp
-  - test/aoj/grl_6_a.test.cpp
-  - test/aoj/grl_6_b.test.cpp
-  - test/aoj/dsl_2_b/fenwick-tree.test.cpp
-  - test/aoj/dsl_1_a.test.cpp
 documentation_of: src/cpp-template/header/int-alias.hpp
 layout: document
 redirect_from:
