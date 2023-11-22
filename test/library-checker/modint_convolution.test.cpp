@@ -1,6 +1,6 @@
 // verification-helper: PROBLEM https://judge.yosupo.jp/problem/convolution_mod
 
-#include "src/math/convolution/mod-convolution.hpp"
+#include "src/math/convolution/modint-convolution.hpp"
 
 #include <iostream>
 #include <vector>
