@@ -62,8 +62,8 @@ data:
       path: src/math/convolution/fast-walsh-hadamard-transform.hpp
       title: src/math/convolution/fast-walsh-hadamard-transform.hpp
     - icon: ':heavy_check_mark:'
-      path: src/math/convolution/mod-convolution.hpp
-      title: src/math/convolution/mod-convolution.hpp
+      path: src/math/convolution/modint-convolution.hpp
+      title: src/math/convolution/modint-convolution.hpp
   - name: src/math/modular-arithmetic
     pages:
     - icon: ':warning:'
@@ -106,6 +106,9 @@ data:
     - icon: ':warning:'
       path: src/string/rolling-hash.hpp
       title: src/string/rolling-hash.hpp
+    - icon: ':heavy_check_mark:'
+      path: src/string/wildcard-pattern-matching.hpp
+      title: src/string/wildcard-pattern-matching.hpp
     - icon: ':warning:'
       path: src/string/z-algorithm.hpp
       title: src/string/z-algorithm.hpp
@@ -139,6 +142,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/atcoder/abc291_e.test.cpp
       title: test/atcoder/abc291_e.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: test/atcoder/abc307_h.test.cpp
+      title: test/atcoder/abc307_h.test.cpp
     - icon: ':heavy_check_mark:'
       path: test/atcoder/arc117_c.test.cpp
       title: test/atcoder/arc117_c.test.cpp

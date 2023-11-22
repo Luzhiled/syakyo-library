@@ -100,8 +100,8 @@ data:
   timestamp: '2023-07-03 12:42:25+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/aoj/grl_6_a.test.cpp
   - test/aoj/2313.test.cpp
+  - test/aoj/grl_6_a.test.cpp
 documentation_of: src/graph/flow/max-flow.hpp
 layout: document
 redirect_from:

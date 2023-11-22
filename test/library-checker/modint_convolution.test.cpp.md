@@ -8,8 +8,8 @@ data:
     path: src/cpp-template/header/size-alias.hpp
     title: src/cpp-template/header/size-alias.hpp
   - icon: ':heavy_check_mark:'
-    path: src/math/convolution/mod-convolution.hpp
-    title: src/math/convolution/mod-convolution.hpp
+    path: src/math/convolution/modint-convolution.hpp
+    title: src/math/convolution/modint-convolution.hpp
   - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/mod-pow.hpp
     title: src/math/modular-arithmetic/mod-pow.hpp
@@ -23,7 +23,7 @@ data:
     links:
     - https://judge.yosupo.jp/problem/convolution_mod
   bundledCode: "#line 1 \"test/library-checker/modint_convolution.test.cpp\"\n// verification-helper:\
-    \ PROBLEM https://judge.yosupo.jp/problem/convolution_mod\n\n#line 2 \"src/math/convolution/mod-convolution.hpp\"\
+    \ PROBLEM https://judge.yosupo.jp/problem/convolution_mod\n\n#line 2 \"src/math/convolution/modint-convolution.hpp\"\
     \n\n#line 2 \"src/cpp-template/header/int-alias.hpp\"\n\n#include <cstdint>\n\n\
     namespace luz {\n\n  using i32 = std::int32_t;\n  using i64 = std::int64_t;\n\
     \  using u32 = std::uint32_t;\n  using u64 = std::uint64_t;\n\n}\n#line 2 \"src/cpp-template/header/size-alias.hpp\"\
@@ -33,7 +33,7 @@ data:
     \  i64 mod_pow(i64 b, i64 e, i64 mod) {\n    if (mod == 1) return 0;\n    i64\
     \ ans{1};\n\n    while (e) {\n      if (e & 1) {\n        ans = ans * b % mod;\n\
     \      }\n      b = b * b % mod;\n      e /= 2;\n    }\n\n    return ans;\n  }\n\
-    \n}\n#line 6 \"src/math/convolution/mod-convolution.hpp\"\n\n#include <vector>\n\
+    \n}\n#line 6 \"src/math/convolution/modint-convolution.hpp\"\n\n#include <vector>\n\
     \nnamespace luz {\n\n  usize bw(u64 x) {\n    if (x == 0) return 0;\n    return\
     \ 64 - __builtin_clzll(x);\n  }\n\n  void butterfly(std::vector< i64 > &vs, i64\
     \ mod) {\n    constexpr i64 root = 62;\n    usize n = vs.size(), h = bw(n) - 1;\n\
@@ -65,7 +65,7 @@ data:
     \ i++) {\n      std::cout << c[i] << (i + 1 == c.size() ? \"\\n\" : \" \");\n\
     \    }\n  }\n\n} // namespace luz\n\nint main() {\n  luz::main_();\n}\n"
   code: "// verification-helper: PROBLEM https://judge.yosupo.jp/problem/convolution_mod\n\
-    \n#include \"src/math/convolution/mod-convolution.hpp\"\n\n#include <iostream>\n\
+    \n#include \"src/math/convolution/modint-convolution.hpp\"\n\n#include <iostream>\n\
     #include <vector>\n\nnamespace luz {\n\n  void main_() {\n    usize n, m;\n  \
     \  std::cin >> n >> m;\n\n    constexpr i64 mod = 998244353;\n    std::vector<\
     \ i64 > f(n), g(m);\n    for (auto &a: f) std::cin >> a;\n    for (auto &b: g)\
@@ -74,14 +74,14 @@ data:
     \ \"\\n\" : \" \");\n    }\n  }\n\n} // namespace luz\n\nint main() {\n  luz::main_();\n\
     }\n"
   dependsOn:
-  - src/math/convolution/mod-convolution.hpp
+  - src/math/convolution/modint-convolution.hpp
   - src/cpp-template/header/int-alias.hpp
   - src/cpp-template/header/size-alias.hpp
   - src/math/modular-arithmetic/mod-pow.hpp
   isVerificationFile: true
   path: test/library-checker/modint_convolution.test.cpp
   requiredBy: []
-  timestamp: '2023-07-06 04:55:57+09:00'
+  timestamp: '2023-11-23 07:06:01+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/library-checker/modint_convolution.test.cpp

@@ -53,8 +53,8 @@ data:
   timestamp: '2023-06-20 08:43:53+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/atcoder/abc291_e.test.cpp
   - test/aoj/grl_1_b/dynamic-graph.test.cpp
+  - test/atcoder/abc291_e.test.cpp
 documentation_of: src/graph/class/dynamic-graph.hpp
 layout: document
 redirect_from:

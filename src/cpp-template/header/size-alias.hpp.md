@@ -27,14 +27,17 @@ data:
     path: src/math/convolution/fast-walsh-hadamard-transform.hpp
     title: src/math/convolution/fast-walsh-hadamard-transform.hpp
   - icon: ':heavy_check_mark:'
-    path: src/math/convolution/mod-convolution.hpp
-    title: src/math/convolution/mod-convolution.hpp
+    path: src/math/convolution/modint-convolution.hpp
+    title: src/math/convolution/modint-convolution.hpp
   - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/modular-combinatorics.hpp
     title: src/math/modular-arithmetic/modular-combinatorics.hpp
   - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/small-mod-combination.hpp
     title: src/math/modular-arithmetic/small-mod-combination.hpp
+  - icon: ':heavy_check_mark:'
+    path: src/string/wildcard-pattern-matching.hpp
+    title: src/string/wildcard-pattern-matching.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/aoj/dsl_1_a.test.cpp
@@ -54,6 +57,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: test/atcoder/abc291_e.test.cpp
     title: test/atcoder/abc291_e.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/atcoder/abc307_h.test.cpp
+    title: test/atcoder/abc307_h.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/atcoder/arc117_c.test.cpp
     title: test/atcoder/arc117_c.test.cpp
@@ -83,31 +89,33 @@ data:
   isVerificationFile: false
   path: src/cpp-template/header/size-alias.hpp
   requiredBy:
-  - src/math/modular-arithmetic/small-mod-combination.hpp
-  - src/math/modular-arithmetic/modular-combinatorics.hpp
-  - src/math/convolution/bitwise-xor-convolution.hpp
-  - src/math/convolution/bitwise-and-convolution.hpp
-  - src/math/convolution/mod-convolution.hpp
-  - src/math/convolution/fast-walsh-hadamard-transform.hpp
   - src/data-structure/disjoint-set-union.hpp
-  - src/graph/single-source-shortest-path/in-weighted-graph.hpp
-  - src/graph/flow/min-cost-f-flow.hpp
+  - src/string/wildcard-pattern-matching.hpp
   - src/graph/class/edge/edge.hpp
   - src/graph/class/dynamic-graph.hpp
+  - src/graph/flow/min-cost-f-flow.hpp
+  - src/graph/single-source-shortest-path/in-weighted-graph.hpp
+  - src/math/convolution/fast-walsh-hadamard-transform.hpp
+  - src/math/convolution/bitwise-and-convolution.hpp
+  - src/math/convolution/modint-convolution.hpp
+  - src/math/convolution/bitwise-xor-convolution.hpp
+  - src/math/modular-arithmetic/modular-combinatorics.hpp
+  - src/math/modular-arithmetic/small-mod-combination.hpp
   timestamp: '2023-06-20 06:34:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/atcoder/arc117_c.test.cpp
-  - test/atcoder/abc291_e.test.cpp
-  - test/aoj/grl_6_a.test.cpp
-  - test/aoj/dsl_1_a.test.cpp
-  - test/aoj/grl_6_b.test.cpp
-  - test/aoj/grl_1_b/dynamic-graph.test.cpp
-  - test/aoj/dsl_2_b/fenwick-tree.test.cpp
-  - test/library-checker/bitwise_xor_convolution.test.cpp
+  - test/library-checker/scc.test.cpp
   - test/library-checker/modint_convolution.test.cpp
   - test/library-checker/bitwise_and_convolution.test.cpp
-  - test/library-checker/scc.test.cpp
+  - test/library-checker/bitwise_xor_convolution.test.cpp
+  - test/aoj/grl_1_b/dynamic-graph.test.cpp
+  - test/aoj/dsl_1_a.test.cpp
+  - test/aoj/grl_6_b.test.cpp
+  - test/aoj/dsl_2_b/fenwick-tree.test.cpp
+  - test/aoj/grl_6_a.test.cpp
+  - test/atcoder/arc117_c.test.cpp
+  - test/atcoder/abc307_h.test.cpp
+  - test/atcoder/abc291_e.test.cpp
 documentation_of: src/cpp-template/header/size-alias.hpp
 layout: document
 redirect_from:

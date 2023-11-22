@@ -7,6 +7,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: test/atcoder/abc307_h.test.cpp
+    title: test/atcoder/abc307_h.test.cpp
+  - icon: ':heavy_check_mark:'
     path: test/atcoder/arc117_c.test.cpp
     title: test/atcoder/arc117_c.test.cpp
   - icon: ':heavy_check_mark:'
@@ -93,9 +96,10 @@ data:
   timestamp: '2023-06-20 08:00:22+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/atcoder/arc117_c.test.cpp
-  - test/library-checker/bitwise_xor_convolution.test.cpp
   - test/library-checker/bitwise_and_convolution.test.cpp
+  - test/library-checker/bitwise_xor_convolution.test.cpp
+  - test/atcoder/arc117_c.test.cpp
+  - test/atcoder/abc307_h.test.cpp
 documentation_of: src/math/modular-arithmetic/static-modint.hpp
 layout: document
 redirect_from:

@@ -10,8 +10,14 @@ data:
   - icon: ':heavy_check_mark:'
     path: src/math/modular-arithmetic/mod-pow.hpp
     title: src/math/modular-arithmetic/mod-pow.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':heavy_check_mark:'
+    path: src/string/wildcard-pattern-matching.hpp
+    title: src/string/wildcard-pattern-matching.hpp
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/atcoder/abc307_h.test.cpp
+    title: test/atcoder/abc307_h.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/library-checker/modint_convolution.test.cpp
     title: test/library-checker/modint_convolution.test.cpp
@@ -20,17 +26,17 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"src/math/convolution/mod-convolution.hpp\"\n\n#line 2 \"\
-    src/cpp-template/header/int-alias.hpp\"\n\n#include <cstdint>\n\nnamespace luz\
-    \ {\n\n  using i32 = std::int32_t;\n  using i64 = std::int64_t;\n  using u32 =\
-    \ std::uint32_t;\n  using u64 = std::uint64_t;\n\n}\n#line 2 \"src/cpp-template/header/size-alias.hpp\"\
+  bundledCode: "#line 2 \"src/math/convolution/modint-convolution.hpp\"\n\n#line 2\
+    \ \"src/cpp-template/header/int-alias.hpp\"\n\n#include <cstdint>\n\nnamespace\
+    \ luz {\n\n  using i32 = std::int32_t;\n  using i64 = std::int64_t;\n  using u32\
+    \ = std::uint32_t;\n  using u64 = std::uint64_t;\n\n}\n#line 2 \"src/cpp-template/header/size-alias.hpp\"\
     \n\n#include <cstddef>\n\nnamespace luz {\n\n  using isize = std::ptrdiff_t;\n\
     \  using usize = std::size_t;\n\n}\n#line 2 \"src/math/modular-arithmetic/mod-pow.hpp\"\
     \n\n#line 4 \"src/math/modular-arithmetic/mod-pow.hpp\"\n\nnamespace luz {\n\n\
     \  i64 mod_pow(i64 b, i64 e, i64 mod) {\n    if (mod == 1) return 0;\n    i64\
     \ ans{1};\n\n    while (e) {\n      if (e & 1) {\n        ans = ans * b % mod;\n\
     \      }\n      b = b * b % mod;\n      e /= 2;\n    }\n\n    return ans;\n  }\n\
-    \n}\n#line 6 \"src/math/convolution/mod-convolution.hpp\"\n\n#include <vector>\n\
+    \n}\n#line 6 \"src/math/convolution/modint-convolution.hpp\"\n\n#include <vector>\n\
     \nnamespace luz {\n\n  usize bw(u64 x) {\n    if (x == 0) return 0;\n    return\
     \ 64 - __builtin_clzll(x);\n  }\n\n  void butterfly(std::vector< i64 > &vs, i64\
     \ mod) {\n    constexpr i64 root = 62;\n    usize n = vs.size(), h = bw(n) - 1;\n\
@@ -84,16 +90,18 @@ data:
   - src/cpp-template/header/size-alias.hpp
   - src/math/modular-arithmetic/mod-pow.hpp
   isVerificationFile: false
-  path: src/math/convolution/mod-convolution.hpp
-  requiredBy: []
-  timestamp: '2023-07-06 04:55:57+09:00'
+  path: src/math/convolution/modint-convolution.hpp
+  requiredBy:
+  - src/string/wildcard-pattern-matching.hpp
+  timestamp: '2023-11-23 06:28:59+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library-checker/modint_convolution.test.cpp
-documentation_of: src/math/convolution/mod-convolution.hpp
+  - test/atcoder/abc307_h.test.cpp
+documentation_of: src/math/convolution/modint-convolution.hpp
 layout: document
 redirect_from:
-- /library/src/math/convolution/mod-convolution.hpp
-- /library/src/math/convolution/mod-convolution.hpp.html
-title: src/math/convolution/mod-convolution.hpp
+- /library/src/math/convolution/modint-convolution.hpp
+- /library/src/math/convolution/modint-convolution.hpp.html
+title: src/math/convolution/modint-convolution.hpp
 ---
